@@ -1,0 +1,29 @@
+Questão 2
+
+a. Para que servem os controllers?
+Os controllers são responsáveis por gerenciar as requisições HTTP recebidas, processar as entradas e retornar as respostas adequadas. 
+Eles atuam como intermediários entre o cliente e os serviços da aplicação, delegando a lógica de negócios para os services e manipulando os dados conforme necessário.
+
+
+b. Para que servem os services?
+Os services contêm a lógica de negócios da aplicação. 
+Eles são responsáveis por processar as informações, aplicar regras de negócio e interagir com os repositórios para acessar ou modificar os dados. 
+Os controllers chamam os métodos dos services para realizar operações específicas.
+
+
+c. Para que servem os repositories?
+Os repositories abstraem a interação com a camada de persistência de dados, como bancos de dados. 
+Eles fornecem métodos para acessar, inserir, atualizar e excluir dados, 
+permitindo que os services se concentrem na lógica de negócios sem se preocupar com detalhes de implementação do banco de dados.
+
+
+d. Para que servem os Data Transfer Objects (DTOs)?
+Os DTOs são objetos que definem a estrutura dos dados transferidos entre diferentes camadas da aplicação. 
+Eles ajudam a validar e estruturar os dados de entrada e saída, garantindo consistência e facilitando a transformação de dados entre camadas, 
+como a conversão de dados recebidos de uma requisição HTTP para o formato esperado pelo serviço.
+
+
+ O que é JWT (JSON Web Token)?
+O JWT é um padrão aberto (RFC 7519) que define uma forma compacta e autossuficiente de transmitir informações entre as partes como um objeto JSON. 
+Ele é comumente utilizado para autenticação e autorização em APIs RESTful, permitindo que o servidor gere um token após a autenticação do usuário, 
+o qual pode ser enviado pelo cliente em requisições subsequentes para validar a identidade do usuário e autorizar o acesso a recursos protegidos.
