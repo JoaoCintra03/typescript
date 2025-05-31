@@ -37,5 +37,15 @@ router.post("/", async (req,res) => {
         })
         return
 })
+ router.put('/:id', async (req, res) =>{
+
+  const registerParamsSchema = z.object({
+    id: z.string().min(1)
+  })
+
+  const id = +registerParamsSchema.parse(req.params).id
+  
+
+})
 
 export default router
