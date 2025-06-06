@@ -10,7 +10,7 @@ exports.up = function(knex) {
     table.text('senha').notNullable()
     table.timestamp('created_at')
       .defaultTo(knex.fn.now())
-    table.timestamp('update_at')
+    table.timestamp('updated_at')
      .defaultTo(knex.fn.now())
   }).then(() => {
     console.log('criado a tabela de usuarios')

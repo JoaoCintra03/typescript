@@ -2,6 +2,7 @@ import Router from 'express'
 import knex from '../database/knex'
 import { z } from 'zod';
 import { compare } from 'bcrypt';
+import { sign } from 'jsonwebtoken';
 
 const router = Router();
 
@@ -39,8 +40,18 @@ router.post('/', async (req, res) =>{
         })
         return
     }
+
+    const token = sign(
+        { idUsuario: user.id },
+        'NAOPASSARNGM_lhfvqwkufvyk',
+        {
+            expiresIn: '5h'
+        }
+    )
     res.json({
-        message: 'Voce logou, parabens!! :D'
+        message: 'Voce logou, parabens!! :D',
+        token: token,
+        usuario: user,
     })
     return
 
