@@ -1,6 +1,7 @@
 import { Router } from 'express'
 import knex from './../database/knex'
 
+
 const routes = Router()
 
 routes.get('/', (requisicao, resposta) => {
