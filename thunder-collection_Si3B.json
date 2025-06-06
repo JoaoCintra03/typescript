@@ -1,0 +1,291 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Si3B",
+    "collectionId": "c7257f8d-17af-413c-9b3b-f989f49a5e12",
+    "dateExported": "2025-06-06T22:48:33.539Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "ae0165c3-06bf-4f8f-abf8-78590876df7a",
+            "name": "trampoTop",
+            "containerId": "",
+            "created": "2025-03-21T01:03:13.563Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "915f8c2e-4b42-4ef9-8924-38de73358b93",
+            "name": "pessoas",
+            "containerId": "ae0165c3-06bf-4f8f-abf8-78590876df7a",
+            "created": "2025-04-04T22:32:23.665Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "e6a570e1-ed28-4303-b46e-c407ecd75865",
+            "name": "vagas",
+            "containerId": "ae0165c3-06bf-4f8f-abf8-78590876df7a",
+            "created": "2025-04-11T22:35:51.039Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "1ed775ba-8169-499c-8f60-31f5b7941010",
+            "name": "apiComTypescript",
+            "containerId": "",
+            "created": "2025-05-17T00:08:23.651Z",
+            "sortNum": 50000
+        },
+        {
+            "_id": "0708092e-0409-410a-a4f5-e45b6ced7894",
+            "name": "categorias",
+            "containerId": "1ed775ba-8169-499c-8f60-31f5b7941010",
+            "created": "2025-05-17T00:08:36.736Z",
+            "sortNum": 60000
+        },
+        {
+            "_id": "b4468443-0ef9-4d0c-9921-5fd29b37434a",
+            "name": "usuarios",
+            "containerId": "1ed775ba-8169-499c-8f60-31f5b7941010",
+            "created": "2025-05-29T22:26:09.962Z",
+            "sortNum": 80000
+        },
+        {
+            "_id": "6b8d318f-23c5-4607-9be1-d730ad46e64c",
+            "name": "session",
+            "containerId": "1ed775ba-8169-499c-8f60-31f5b7941010",
+            "created": "2025-05-30T23:08:38.512Z",
+            "sortNum": 90000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "1d8223b1-e3c0-4c14-944b-73085c7a41a0",
+            "colId": "c7257f8d-17af-413c-9b3b-f989f49a5e12",
+            "containerId": "e6a570e1-ed28-4303-b46e-c407ecd75865",
+            "name": "receber",
+            "url": "",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2025-04-11T22:35:56.000Z",
+            "modified": "2025-04-11T22:35:56.000Z",
+            "headers": []
+        },
+        {
+            "_id": "1ceb4937-462c-4ccf-bfe6-658a5113ef61",
+            "colId": "c7257f8d-17af-413c-9b3b-f989f49a5e12",
+            "containerId": "e6a570e1-ed28-4303-b46e-c407ecd75865",
+            "name": "colocar",
+            "url": "http://localhost:3001/pessoas",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2025-04-11T22:36:00.271Z",
+            "modified": "2025-04-11T22:36:00.271Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\":\"Joao\",\n\n  \"email\": \"jv681339@gmail\",\n  \n  \"telefone\": \"984313628\",\n  \n  \"endereco\": \"Jardim Tamoyo\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "2759e38b-e40f-4adb-a36d-3c017ebfc0f7",
+            "colId": "c7257f8d-17af-413c-9b3b-f989f49a5e12",
+            "containerId": "e6a570e1-ed28-4303-b46e-c407ecd75865",
+            "name": "puts",
+            "url": "http://localhost:3001/categorias",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2025-04-11T22:36:03.391Z",
+            "modified": "2025-04-11T22:36:03.391Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\":\"Vini\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "0bd0e978-ad80-4246-a318-dc38110d8218",
+            "colId": "c7257f8d-17af-413c-9b3b-f989f49a5e12",
+            "containerId": "e6a570e1-ed28-4303-b46e-c407ecd75865",
+            "name": "destruir",
+            "url": "http://localhost:3001/categorias",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2025-04-11T22:36:08.207Z",
+            "modified": "2025-04-11T22:36:08.207Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\":\"Vini\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "b254789f-eeff-405e-8afd-e3df10411339",
+            "colId": "c7257f8d-17af-413c-9b3b-f989f49a5e12",
+            "containerId": "915f8c2e-4b42-4ef9-8924-38de73358b93",
+            "name": "B",
+            "url": "",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2025-04-04T22:32:37.159Z",
+            "modified": "2025-04-04T22:32:37.160Z",
+            "headers": []
+        },
+        {
+            "_id": "79141c26-41b4-4f14-aa18-a04a684bb794",
+            "colId": "c7257f8d-17af-413c-9b3b-f989f49a5e12",
+            "containerId": "915f8c2e-4b42-4ef9-8924-38de73358b93",
+            "name": "I",
+            "url": "http://localhost:3001/pessoas",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2025-04-04T22:33:08.808Z",
+            "modified": "2025-04-05T00:09:44.759Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\":\"Joao\",\n\n  \"email\": \"jv681339@gmail\",\n  \n  \"telefone\": \"984313628\",\n  \n  \"endereco\": \"Jardim Tamoyo\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "1b34f293-3e53-4040-8bfa-c15071858489",
+            "colId": "c7257f8d-17af-413c-9b3b-f989f49a5e12",
+            "containerId": "915f8c2e-4b42-4ef9-8924-38de73358b93",
+            "name": "D",
+            "url": "http://localhost:3001/categorias",
+            "method": "DELETE",
+            "sortNum": 110000,
+            "created": "2025-04-04T22:33:22.327Z",
+            "modified": "2025-04-04T22:33:22.327Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\":\"Vini\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "b0a06ab8-1e53-4e90-a835-14a8dfa740e7",
+            "colId": "c7257f8d-17af-413c-9b3b-f989f49a5e12",
+            "containerId": "0708092e-0409-410a-a4f5-e45b6ced7894",
+            "name": "testeapi",
+            "url": "",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2025-05-17T00:09:05.986Z",
+            "modified": "2025-05-17T00:09:05.986Z",
+            "headers": []
+        },
+        {
+            "_id": "8328af25-4f1d-47e1-aa25-2f682a9d4e84",
+            "colId": "c7257f8d-17af-413c-9b3b-f989f49a5e12",
+            "containerId": "0708092e-0409-410a-a4f5-e45b6ced7894",
+            "name": "buscar",
+            "url": "http://localhost:3001/categorias",
+            "method": "GET",
+            "sortNum": 140000,
+            "created": "2025-05-17T00:09:14.660Z",
+            "modified": "2025-05-17T00:12:19.992Z",
+            "headers": []
+        },
+        {
+            "_id": "ba9ed44c-94c3-433b-9a72-4d4dc9bcd208",
+            "colId": "c7257f8d-17af-413c-9b3b-f989f49a5e12",
+            "containerId": "0708092e-0409-410a-a4f5-e45b6ced7894",
+            "name": "criar",
+            "url": "http://localhost:3001/categorias",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2025-05-17T00:09:21.067Z",
+            "modified": "2025-05-17T00:34:25.541Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\":\"Esportes\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "162b175a-aeb9-43a6-a8b3-5694b14ffa96",
+            "colId": "c7257f8d-17af-413c-9b3b-f989f49a5e12",
+            "containerId": "b4468443-0ef9-4d0c-9921-5fd29b37434a",
+            "name": "cadastrar",
+            "url": "http://localhost:3001/usuarios",
+            "method": "POST",
+            "sortNum": 240000,
+            "created": "2025-05-29T22:31:17.056Z",
+            "modified": "2025-05-30T23:24:15.860Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\":\"admin\",\n  \"email\":\"admin@gmail.com\",\n  \"senha\":\"123456\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "fcbbd9e1-22ae-4af5-967b-fd43797f40d6",
+            "colId": "c7257f8d-17af-413c-9b3b-f989f49a5e12",
+            "containerId": "b4468443-0ef9-4d0c-9921-5fd29b37434a",
+            "name": "buscar",
+            "url": "http://localhost:3001/usuarios",
+            "method": "GET",
+            "sortNum": 250000,
+            "created": "2025-05-29T23:24:34.662Z",
+            "modified": "2025-05-29T23:24:46.919Z",
+            "headers": []
+        },
+        {
+            "_id": "7e0f31b8-046b-4409-a03b-ec797b21e604",
+            "colId": "c7257f8d-17af-413c-9b3b-f989f49a5e12",
+            "containerId": "b4468443-0ef9-4d0c-9921-5fd29b37434a",
+            "name": "deletar",
+            "url": "http://localhost:3001/usuarios/1",
+            "method": "DELETE",
+            "sortNum": 270000,
+            "created": "2025-05-30T00:32:01.536Z",
+            "modified": "2025-06-06T21:53:14.613Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\":\"Joaoo\",\n  \"email\":\"Joao03@gmail.com\",\n  \"senha\":\"123456\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "51f8f750-b7ac-4858-b90b-eb088701cd09",
+            "colId": "c7257f8d-17af-413c-9b3b-f989f49a5e12",
+            "containerId": "b4468443-0ef9-4d0c-9921-5fd29b37434a",
+            "name": "atualizar",
+            "url": "http://localhost:3001/usuarios/1",
+            "method": "PUT",
+            "sortNum": 290000,
+            "created": "2025-05-30T00:32:43.424Z",
+            "modified": "2025-05-31T01:12:01.318Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\":\"Joaoo\",\n  \"email\":\"Joao03@gmail.com\",\n  \"senha\":\"123456\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "61759318-2747-451c-9fb7-00bacc50c666",
+            "colId": "c7257f8d-17af-413c-9b3b-f989f49a5e12",
+            "containerId": "6b8d318f-23c5-4607-9be1-d730ad46e64c",
+            "name": "login",
+            "url": "http://localhost:3001/session",
+            "method": "POST",
+            "sortNum": 300000,
+            "created": "2025-05-30T23:08:48.255Z",
+            "modified": "2025-05-30T23:26:43.348Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"admin@gmail.com\",\n  \"senha\": \"123456\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "Pw8IpIWuw44R-b8D7ksmIEdqjXo8IT5h9TM5cvCqIfVnYo_HVbC8pC945wyKScpuUUwOv3X4xRhaCD1khihsGg"
+}
